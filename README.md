@@ -1,14 +1,15 @@
 # Django RestFull Api - TODO List
 Projeto de uma RESTful API em Python com framework Django Rest Framework.
 
-Obs.: Em relação ao projeto original "Api_Todo" equivale a "app", e "Tasks" a "api".
+Obs.: 
+- Em relação ao projeto original "Api_Todo" equivale a "app", e "Tasks" a "api".  
+- Pode ser necessário renomear o diretório raiz para "Tasks" para executar o projeto.
 
 ## Instalação das dependências do Django e do Projeto
 - `pip install django`
 - `pip install djangorestframework`
 - `pip install markdown # Suporte Markdown para a API navegável`
 - `pip install django-filter # Suporte de filtragem`
-- `pip install pillow # Suporte para imagens`
 
 
 ## Comandos no terminal
@@ -39,7 +40,10 @@ e também 'Api_Todo.apps.ApiTodoConfig', caso não esteja adionado.
 9. Aplicar migrations com `python manage.py migrate`.
 10. Executar a aplicação pelo PyCharm ou com python manage.py runserver.
 
-Obs.: Pode ser necessário renomear o diretório raiz para "Tasks" para executar o projeto.
+Adicionando versão 2 da api:
+1. Em Api_Todo > views.py, criar duas classes que herdam de APIView e implementam seus métodos.
+2. Em Api_Todo > urls.py, adicionar rotas para estas classes e adicionar o prefixo da versão.
+
 
 ## Referências
 Udemy - Aprenda Django REST Framework do Zero:
