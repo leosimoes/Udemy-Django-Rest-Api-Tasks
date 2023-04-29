@@ -4,6 +4,7 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.exceptions import NotFound
+from rest_framework import viewsets
 
 from Api_Todo.models import Task
 from Api_Todo.serializers import TaskSerializer
@@ -84,3 +85,8 @@ class TaskAPIViewDetailChangeDelete(APIView):
         task = self.get_object(pk)
         task.delete()
         Response(status=status.HTTP_204_NO_CONTENT)
+
+# API - Version 3
+class TaskViewSet(viewsets.ModelViewSet):
+    queryset = Task.objects.all()
+    serializer_class = TaskSerializer

@@ -42,7 +42,11 @@ e também 'Api_Todo.apps.ApiTodoConfig', caso não esteja adionado.
 
 Adicionando versão 2 da api:
 1. Em Api_Todo > views.py, criar duas classes que herdam de APIView e implementam seus métodos.
-2. Em Api_Todo > urls.py, adicionar rotas para estas classes e adicionar o prefixo da versão.
+2. Em Api_Todo > urls.py, adicionar rotas para estas classes e adicionar o prefixo da versão (v2).
+
+Adicionando versão 3 da api:
+1. Em Api_Todo > views.py, criar uma classe que herda de viewsets.ModelViewSet e defina queryset e serializer_class.
+2. Em Api_Todo > urls.py, adicionar rotas para esta classe com DefaultRouter e adicionar o prefixo da versão (v3).
 
 
 ## Referências
