@@ -1,4 +1,4 @@
-# Django RestFull Api - TODO List
+# Django RestFul Api - TODO List
 Projeto de uma RESTful API em Python com framework Django Rest Framework.
 
 Obs.: 
@@ -48,6 +48,9 @@ Adicionando versão 3 da api:
 1. Em Api_Todo > views.py, criar uma classe que herda de viewsets.ModelViewSet e defina queryset e serializer_class.
 2. Em Api_Todo > urls.py, adicionar rotas para esta classe com DefaultRouter e adicionar o prefixo da versão (v3).
 
+# Diagrama de Classes - UML
+
+![UML-Classes-Tasks](UML-Class-Diagram-Tasks.png)
 
 ## Referências
 Udemy - Aprenda Django REST Framework do Zero:
